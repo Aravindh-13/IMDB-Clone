@@ -1,0 +1,90 @@
+body {
+  background-color:#457d65;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main-content {
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+  align-items: center;
+}
+
+.input-container > button {
+  margin-top: 10px;
+  background-color: red;
+  border-radius: 50%;
+  width:40px;
+  height: 40px;
+  outline: none;
+  border: none;
+  transition:
+    width 0.5s,
+    height 0.5s,
+    background-color 0.5s;
+  cursor: pointer;
+}
+
+.input-container > button:hover {
+  background-color: black;
+  color: white;
+}
+
+.input-container > input {
+   border : 1px solid grey;
+   border-radius : 5px;
+   outline: none;
+   width: 300px;
+   height: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.task-container {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.todo-tasks {
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+  width : 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.btn-checkbox {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-checkbox > button {
+  background-color: red;
+  outline: none;
+  border: none;
+  width: 75px;
+  padding: 7px;
+  color : white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-radius: 10px;
+  cursor: pointer;
+   transition:
+    width 0.5s,
+    height 0.5s,
+    background-color 0.5s;
+}
+
+.btn-checkbox > button:hover {
+  background-color: black;
+  color: white;
+}
