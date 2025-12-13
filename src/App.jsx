@@ -37,40 +37,34 @@ function App() {
   return (
     <>
       <HashRouter>
+        <Navbar />
 
-  <Navbar />
-
-  <Routes>
-
-    <Route
-      path="/"
-      element={
-        <>
-          <Banner />
-          <Movies
-            handleWatchList={handleWatchList}
-            handleRemoveWatchList={handleRemoveWatchList}
-            watchlist={watchlist}
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Banner />
+                <Movies
+                  handleWatchList={handleWatchList}
+                  handleRemoveWatchList={handleRemoveWatchList}
+                  watchlist={watchlist}
+                />
+              </>
+            }
           />
-        </>
-      }
-    />
-
-    <Route
-      path="/watchlist"
-      element={
-        <Watchlist
-          watchlist={watchlist}
-          setWatchlist={setWatchlist}
-          handleRemoveWatchList={handleRemoveWatchList}
-        />
-      }
-    />
-
-  </Routes>
-
-</HashRouter>
-
+          <Route
+            path="/watchlist"
+            element={
+              <Watchlist
+                watchlist={watchlist}
+                setWatchlist={setWatchlist}
+                handleRemoveWatchList={handleRemoveWatchList}
+              />
+            }
+          />
+        </Routes>
+      </HashRouter>
     </>
   );
 }
